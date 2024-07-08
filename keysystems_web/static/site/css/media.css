@@ -1,0 +1,28 @@
+@media screen and (max-width: 1024px) {
+    .conteiner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .header_start {
+        display: none;
+    }
+    .header_mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 1);
+        height: 54px;
+        border-bottom: solid 1px rgba(200, 200, 200, 1);
+        box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.15);
+    }
+    .header_mobile_logo img {
+        padding-left: 15px;
+        max-width: 277px;
+        width: 100%;
+    }
+    .header_mobile_burger {
+        height: 54px;
+    }
+}

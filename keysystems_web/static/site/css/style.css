@@ -1,0 +1,187 @@
+:root {
+    --color_green: rgba(122, 184, 14, 1);
+    --color_dark: rgba(47, 47, 47, 1);
+    --border_grey: rgba(200, 200, 200, 1) solid 1px
+    --border_grey_radius: 1px solid rgba(204, 204, 204, 1);
+    --border_shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.15);
+}
+
+
+.body_flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header_mobile {
+    display: none;
+}
+
+.header_start {
+    flex-shrink: 0;
+}
+.header_logo {
+    padding-top: 20px;
+}
+.header_logo img {
+    max-width: 940px;
+    width: 100%;
+}
+.header_start_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enter {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enter_item {
+    max-width: 340px;
+    width: 100%;
+    margin: 0 auto;
+}
+.enter_item p {
+    margin-bottom: 28px;
+}
+.enter_form {
+    display: flex;
+    flex-direction: column;
+}
+.enter_h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--color_dark);
+    margin-bottom: 28px;
+}
+.enter_p {
+    margin-bottom: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.enter_form label {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color_dark);
+    margin-bottom: 6px;
+}
+.enter_form input {
+    border: var(--border_grey_radius);
+    border-radius: 2px;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 20px;
+}
+.enter_button {
+    display: block;
+    width: 100%;
+    height: 46px;
+    border: none;
+    background-color: var(--color_green);
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+.register-link a {
+    color: var(--color_dark);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.enter_checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.enter_checkbox label {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+.enter_checkbox input {
+    text-align: left;
+    width: 24px;
+    height: 24px;
+    margin: 0 2px 0 0;
+}
+
+.required::after {
+    content: ' *';
+    color: red;
+}
+.enter_select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+.enter_select select {
+    border: var(--border_grey_radius);
+    border-radius: 2px;
+    height: 37px;
+}
+
+.confirm {
+    display: flex;
+    align-items: start;
+    margin-bottom: 160px;
+}
+.confirm img {
+    margin-right: 18px;
+}
+.confirm p {
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+.footer_flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: var(--border_shadow);
+    border: var(--border_grey);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.footer_left {
+}
+.green_text {
+    color: var(--color_green);
+}
+.footer_right {
+}
+
+/* Мщдальное окно */
+.modal1_img {
+    display: flex;
+    justify-content: flex-end;
+}
+.modal-content h4 {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--color_dark);
+    margin-bottom: 20px;
+}
+.modal-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--color_dark);
+    margin-bottom: 30px;
+}
+
