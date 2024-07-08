@@ -1,0 +1,14 @@
+FROM python:3.11.5
+
+# Устанавливаем зависимости
+WORKDIR /app
+COPY /requirements/ks.txt /app/ks.txt
+
+RUN pip install --upgrade pip && pip install --no-cache-dir -r ks.txt
+
+COPY /keysystems_web .
+
+EXPOSE 8000
+
+# Добавляем задержку перед запуском сервера
+CMD ["sh", "-c", "python manage.py migrate && python manage.py collectstatic && python manage.py runserver 0.0.0.0:8000"]
