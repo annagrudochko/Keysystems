@@ -15,8 +15,8 @@ from enums import RequestMethod
 
 
 # выход
-def logout_view(request):
-    if not request.user.is_authenticated:
+def start_page_redirect(request):
+    if request.user.is_authenticated:
         return redirect('login')
     else:
         logout(request)
