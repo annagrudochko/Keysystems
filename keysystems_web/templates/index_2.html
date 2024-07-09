@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
     <link rel="stylesheet" href="{% static 'site/css/basic_style.css' %}">
-    <!-- <link rel="stylesheet" href="css/basic_style.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="{% static 'site/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'site/css/media.css' %}">
     <title>Личный кабинет КСЯ</title>
 </head>
 
@@ -19,7 +18,8 @@
         <header class="header_start">
             <div class="conteiner">
                 <div class="header_logo">
-                    <img src="img/header_logo.svg" alt="">
+                    <img src="{% static 'site/img/header_logo.svg' %}" alt="">
+                    <!-- <img src="img/header_logo.svg" alt=""> -->
                 </div>
                 <div class="header_start_menu">
                     <a href="http://ksykt.ru/"><button>Назад</button></a>
@@ -31,10 +31,10 @@
         <!-- Menu Mobile -->
         <header class="header_mobile">
             <div class="header_mobile_logo">
-                <img src="img/logo_mobile.svg" alt="">
+                <img src="{% static 'site/img/logo_mobile.svg' %}" alt="">
             </div>
             <div class="header_mobile_burger">
-                <img src="img/burger.svg" alt="">
+                <img src="{% static 'site/img/burger.svg' %}" alt="">
             </div>
         </header>
 
