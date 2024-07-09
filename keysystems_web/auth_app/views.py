@@ -9,8 +9,9 @@ from enums import RequestMethod
 
 
 # распределяет пользователей
-def login_view(request: HttpRequest):
-    pass
+# def login_view(request: HttpRequest):
+#     if request.user.is_authenticated:
+#         return redirect('index_4_1')
 
 
 # выход

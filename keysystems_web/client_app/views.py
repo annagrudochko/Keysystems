@@ -31,3 +31,16 @@ def index_3_2(request: HttpRequest):
     context = {
     }
     return render(request, 'index_3_2.html', context)
+
+
+def index_4_1(request: HttpRequest):
+    context = {
+    }
+    return render(request, 'index_4_1.html', context)
+
+
+def index_4_2(request: HttpRequest):
+    context = {
+    }
+    return render(request, 'index_4_2.html', context)
+
