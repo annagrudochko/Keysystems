@@ -48,33 +48,32 @@
                     <form class="enter_form" action="" method="post">
                         {% csrf_token %}
                         <p>
-                            <label for="reg_INN">Введите ваш ИНН</label>
-                            <input type="text" id="reg_INN">
+                            <label for="INN">Введите ваш ИНН</label>
+                            <input type="text" name="INN" id="INN">
                         </p>
                         <p class="enter_select">
                             <label for="reg_progr" class="required">Програмное обеспечение</label>
-                            <select name="" id="">
+                            <select name="reg_progr" id="reg_progr">
                                 <option value="">1</option>
                                 <option value="">2</option>
                                 <option value="">3</option>
                             </select>
                         </p>
                         <p>
-                            <label for="reg_email">Эл. почта</label>
-                            <input type="email" id="reg_email">
+                            <label for="email">Эл. почта</label>
+                            <input type="email" name="email" id="email">
                         </p>
                         <p>
-                            <label for="reg_fio">ФИО ответственного</label>
-                            <input type="text" id="reg_fio">
+                            <label for="fio">ФИО ответственного</label>
+                            <input type="text" name="fio" id="fio">
                         </p>
                         <p>
-                            <label for="reg_tel">Телефон</label>
-                            <input type="tel" id="reg_tel">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" name="tel" id="tel">
                         </p>
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><button
-                                class="enter_button" type="submit">Отправить запрос</button></a>
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><button class="enter_button" type="submit">Отправить запрос</button></a>
                         <div class="confirm">
-                            <img src="img/Icon.svg" alt="">
+                            <img src="{% static 'site/img/Icon.svg' %}" alt="&#10003;">
                             <p>Нажимая «Отправить запрос» вы соглашаетесь с обработкой ваших данных и пользовательским соглашением.</p>
                         </div>
                     </form>
