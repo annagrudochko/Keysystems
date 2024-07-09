@@ -18,20 +18,33 @@
         <header class="header_start">
             <div class="conteiner">
                 <div class="header_logo">
-                    <img src="img/header_logo.svg" alt="">
+                    <img src="{% static 'site/img/header_logo.svg' %}" alt="">
                 </div>
                 <div class="header_start_menu">
-                    <a href="http://ksykt.ru/"><button>Назад</button></a>
-                    <a href="#"><button>Личный кабинет</button></a>
+                    <a class="btn_back" href="http://ksykt.ru/"><button>Назад</button></a>
+                    <!-- <a href="#"><button>Личный кабинет</button></a> -->
                 </div>
             </div>
+        </header>
+
+        <!-- Menu Mobile -->
+        <header class="header_mobile">
+            <div class="header_mobile_logo">
+                <img src="{% static 'site/img/logo_mobile.svg' %}" alt="">
+            </div>
+            <a class="btn_back" href="http://ksykt.ru/"><button>&larr; Назад</button></a>
+            <!-- <div class="header_mobile_burger">
+                <img src="{% static 'site/img/burger.svg' %}" alt="">
+            </div> -->
         </header>
 
         <div class="enter">
             <div class="conteiner">
                 <div class="enter_item">
+                    <!-- <a class="btn_back" href="http://ksykt.ru/"><button>&larr; Назад</button></a> -->
                     <h1 class="enter_h1">Вход в панель управления</h1>
                     <form class="enter_form" action="" method="post">
+                        {% csrf_token %}
                         <label for="INN">Введите ваш ИНН</label>
                         <input type="text" id="INN">
                         <label for="email">Эл. почта</label>

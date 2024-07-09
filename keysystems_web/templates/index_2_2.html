@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basic_style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'site/css/basic_style.css' %}">
+    <link rel="stylesheet" href="{% static 'site/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'site/css/media.css' %}">
     <title>Личный кабинет КСЯ</title>
 </head>
 
@@ -17,21 +18,35 @@
         <header class="header_start">
             <div class="conteiner">
                 <div class="header_logo">
-                    <img src="img/header_logo.svg" alt="">
+                    <img src="{% static 'site/img/header_logo.svg' %}" alt="">
                 </div>
                 <div class="header_start_menu">
-                    <a href="http://ksykt.ru/"><button>Назад</button></a>
-                    <a href="#"><button>Личный кабинет</button></a>
+                    <a class="btn_back" href="http://ksykt.ru/"><button>Назад</button></a>
+                    <!-- <a href="#"><button>Личный кабинет</button></a> -->
                 </div>
             </div>
         </header>
 
+        <!-- Menu Mobile -->
+        <header class="header_mobile">
+            <div class="header_mobile_logo">
+                <img src="{% static 'site/img/logo_mobile.svg' %}" alt="">
+            </div>
+            <a class="btn_back" href="http://ksykt.ru/"><button>&larr; Назад</button></a>
+            <!-- <div class="header_mobile_burger">
+                <img src="{% static 'site/img/burger.svg' %}" alt="">
+            </div> -->
+        </header>
+
+        <!-- Форма -->
         <div class="enter">
             <div class="conteiner">
                 <div class="enter_item">
+                    <!-- <a class="btn_back" href="http://ksykt.ru/"><button>&larr; Назад</button></a> -->
                     <h1 class="enter_h1">Пароль отправлен</h1>
                     <p class="enter_p">На вашу почту, указанныую при регистрации было оправлено письмо с паролем для входа в панель управления</p>
                     <form class="enter_form" action="" method="post">
+                        {% csrf_token %}
                         <label for="password">Введите пароль</label>
                         <input type="password" id="password">
                         <div class="enter_checkbox">
