@@ -48,8 +48,8 @@
                     <form class="enter_form" action="" method="post">
                         {% csrf_token %}
                         <p>
-                            <label for="INN">Введите ваш ИНН</label>
-                            <input type="text" name="INN" id="INN">
+                            <label for="inn">Введите ваш ИНН</label>
+                            <input type="text" name="inn" id="inn">
                         </p>
                         <p class="enter_select">
                             <label for="reg_progr" class="required">Програмное обеспечение</label>
@@ -71,7 +71,12 @@
                             <label for="tel">Телефон</label>
                             <input type="tel" name="tel" id="tel">
                         </p>
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><button class="enter_button" type="submit">Отправить запрос</button></a>
+                        <button class="enter_button" type="submit">
+                            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Отправить запрос</a>
+                        </button>
+                        <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
+                            <button class="enter_button" type="submit">Отправить запрос</button>
+                        </a> -->
                         <div class="confirm">
                             <img src="{% static 'site/img/Icon.svg' %}" alt="&#10003;">
                             <p>Нажимая «Отправить запрос» вы соглашаетесь с обработкой ваших данных и пользовательским соглашением.</p>

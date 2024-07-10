@@ -238,3 +238,26 @@
 }
 
 
+/* sidnav Mobile */
+.sidnav_li_inn {
+    font-size: 12px;
+    font-weight: 400;
+}
+.create_request {
+    background-color: var(--color_green);
+}
+.create_request_flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.create_request_flex p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+.sidenav_mobile_li {
+    font-size: 16px;
+    font-weight: 400;
+}
