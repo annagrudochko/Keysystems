@@ -27,7 +27,7 @@ urlpatterns = [
     path('index_2_2', client.index_2_2, name='index_2_2'),
     path('index_3_1', client.index_3_1, name='index_3_1'),
     path('index_3_2', client.index_3_2, name='index_3_2'),
-    path('index_4_1', client.index_3_2, name='index_4_1'),
-    path('index_4_2', client.index_3_2, name='index_4_2'),
+    path('index_4_1', client.index_4_1, name='index_4_1'),
+    path('index_4_2', client.index_4_2, name='index_4_2'),
     path('admin/', admin.site.urls),
 ]

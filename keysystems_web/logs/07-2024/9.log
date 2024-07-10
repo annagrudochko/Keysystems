@@ -8,3 +8,28 @@ GET
 
 ---------------------------------
 
+WARNING:root:2024-07-09 12:23:41.641290
+GET
+
+---------------------------------
+
+WARNING:django.request:Not Found: /index_4_1
+WARNING:root:2024-07-09 12:24:24.884899
+GET
+
+---------------------------------
+
+WARNING:django.request:Not Found: /index_4_1
+INFO:django.utils.autoreload:/app/keysystems_web/urls.py changed, reloading.
+WARNING:root:2024-07-09 12:34:54.169162
+GET
+
+---------------------------------
+
+WARNING:root:2024-07-09 12:34:56.200154
+GET
+
+---------------------------------
+
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /index4_1
