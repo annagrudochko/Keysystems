@@ -7,6 +7,7 @@
 }
 
 
+/* Авторизация-Регистрация */
 .body_flex {
     display: flex;
     flex-direction: column;
@@ -175,7 +176,7 @@
 .footer_right {
 }
 
-/* Мщдальное окно */
+/* Модальное окно */
 .modal1_img {
     display: flex;
     justify-content: flex-end;
@@ -194,3 +195,69 @@
     margin-bottom: 30px;
 }
 
+/* Клиентская панель */
+.header_mobile_client {
+    display: none;
+}
+
+.header_start_client {
+    margin-bottom: 20px;
+}
+.header_client {
+}
+.header_client_menu {
+    background-color: rgba(255, 255, 255, 1);
+    border: var(--border_grey);
+    box-shadow: var(--border_shadow);
+    margin-bottom: 20px;
+}
+.header_client_menu_ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_client_menu_ul li {
+    display: flex;
+    padding: 20px;
+    gap: 8px;
+    max-width: 940px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color_dark);
+}
+.header_client_menu_ul li:first-child {
+    flex-grow: 1;
+}
+.header_client_menu_ul li:nth-child(n+2) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-left: rgba(231, 231, 231, 1) solid 1px;
+}
+.menu_INN {
+}
+
+
+/* sidnav Mobile */
+.sidnav_li_inn {
+    font-size: 12px;
+    font-weight: 400;
+}
+.create_request {
+    background-color: var(--color_green);
+}
+.create_request_flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.create_request_flex p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+.sidenav_mobile_li {
+    font-size: 16px;
+    font-weight: 400;
+}
