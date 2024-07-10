@@ -217,7 +217,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.header_client_menu_ul li {
+.header_client_menu_ul li>a {
     display: flex;
     padding: 20px;
     gap: 8px;
@@ -228,6 +228,10 @@
 }
 .header_client_menu_ul li:first-child {
     flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .header_client_menu_ul li:nth-child(n+2) {
     flex-grow: 0;
@@ -237,14 +241,20 @@
 .menu_INN {
 }
 
-
 /* sidnav Mobile */
 .sidnav_li_inn {
     font-size: 12px;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 .create_request {
     background-color: var(--color_green);
+    height: 48px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 .create_request_flex {
     display: flex;
@@ -260,4 +270,80 @@
 .sidenav_mobile_li {
     font-size: 16px;
     font-weight: 400;
+    height: 48px;
 }
+.sidenav_li_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidenav_li_left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.sidenav_li_right {
+    background-color: var(--color_green);
+    height: 22px;
+    min-width: 22px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 10px;
+}
+
+/* Основная часть */
+.page {
+}
+.page_flex {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Меню слева */
+.page_flex_menu {
+    background-color: rgba(255, 255, 255, 1);
+    border: var(--border_grey);
+    box-shadow: var(--border_shadow);
+    min-width: 280px;
+    height: 370px;
+    padding: 30px;
+}
+.page_menu_ul {
+    list-style: none;
+}
+.page_create_request_flex {
+    background-color: var(--color_green);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 46px;
+    padding-left: 24px;
+}
+/* .page_create_request_flex img {
+    margin-right: 13px;
+} */
+.page_menu_li_flex {
+}
+.page_menu_li_left {
+}
+.page_menu_li_right {
+}
+
+/* Основная часть */
+.page_flex_body {
+    background-color: rgba(255, 255, 255, 1);
+    border: var(--border_grey);
+    box-shadow: var(--border_shadow);
+    min-width: 640px;
+    padding: 20px 30px 30px;
+}
+
