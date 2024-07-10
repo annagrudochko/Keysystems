@@ -3,3 +3,4 @@
 **/__pycache__/
 /nginx/conf.d/base.conf
 /.idea
+/keysystems_web/logs/
