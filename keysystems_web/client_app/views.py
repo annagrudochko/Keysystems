@@ -2,21 +2,22 @@ from django.shortcuts import render, redirect
 from django.http.request import HttpRequest
 
 from .forms import AuthUserForm
+from base_utils import log_error
 from enums import RequestMethod
 
 
 def index_2_2(request: HttpRequest):
+    log_error('index_2_2', wt=False)
     context = {}
     return render(request, 'index_2_2.html', context)
 
 
-def index_3_1(request: HttpRequest):
-    context = {
-    }
-    return render(request, 'index_3_1.html', context)
-
-
 def index_3_2(request: HttpRequest):
+    context = {}
+    return render(request, 'index_3_2.html', context)
+
+
+def index_4_1(request: HttpRequest):
     text = [
         {'title': 'Ускорение',
          'text': 'В последнее время пользователи Кейсистем заметили значительное увеличение скорости соединения. '
@@ -28,7 +29,7 @@ def index_3_2(request: HttpRequest):
          'year': '2024',
          'author': 'Иван Иванов',
          'photo': '/media/news/example.jpg',
-        },
+         },
         {'title': 'Расширение',
          'text': 'Кейсистем представил новые услуги для своих клиентов. Среди них – бесплатный Wi-Fi в общественных '
                  'местах, расширенный пакет данных для мобильных устройств и скидки на абонентскую плату для новых '
@@ -64,12 +65,6 @@ def index_3_2(request: HttpRequest):
          },
     ]
     context = {'news': text}
-    return render(request, 'index_3_2.html', context)
-
-
-def index_4_1(request: HttpRequest):
-    context = {
-    }
     return render(request, 'index_4_1.html', context)
 
 
