@@ -1,4 +1,4 @@
-from keysystems_web.settings import TIME_ZONE
+from keysystems_web.settings import DEBUG
 
 from datetime import datetime
 
@@ -18,9 +18,11 @@ def log_error(message, wt: bool = True):
     if not os.path.exists(log_path):
         os.makedirs(log_path)
 
-    log_file_path = os.path.join(log_path, f'{now.day}.log')
-    logging.basicConfig (level=logging.WARNING, filename=log_file_path, encoding='utf-8')
-    # logger = logging.getLogger(f'error_logger_{now}')
+    if DEBUG:
+        logging.basicConfig (level=logging.WARNING, encoding='utf-8')
+    else:
+        log_file_path = os.path.join(log_path, f'{now.day}.log')
+        logging.basicConfig (level=logging.WARNING, filename=log_file_path, encoding='utf-8')
 
     if wt:
         ex_traceback = traceback.format_exc()
